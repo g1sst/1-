@@ -46,13 +46,75 @@
     </ul>
 
     <h2>Форма</h2>
-    <form action="/submit" method="post">
-        <label for="name">Имя:</label><br>
-        <input type="text" id="name" name="name"><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br>
-        <input type="submit" value="Отправить">
-    </form>
+    <form action="/"
+    method="POST">
+
+    <label>
+      ФИО:<br />
+      <input name="fio"
+      placeholder="Введите ФИО" />
+    </label><br />
+
+    <label>
+        Номер телефона:<br />
+        <input name="field-phone"
+          type="tel"
+          placeholder="Введите номер телефона" />
+      </label><br />
+
+    <label>
+       Email:<br />
+      <input name="field-email"
+        type="email"
+        placeholder="Введите вашу почту" />
+    </label><br />
+
+    <label>
+      Введите дату рождения:<br />
+      <input name="field-date"
+        type="date" />
+    </label><br />
+
+    Пол:<br />
+    <label><input type="radio"
+      name="radio-group1" value="Мужской" />
+      Мужской</label>
+    <label><input type="radio"
+      name="radio-group1" value="Женский" />
+      Женский</label><br />
+
+      <label>
+        Любимый язык программирования:
+        <br />
+        <select name="field-name-4[]"
+          multiple="multiple">
+          <option value="Значение1">Pascal</option>
+          <option value="Значение2">C</option>
+          <option value="Значение3">C++</option>
+          <option value="Значение4">JavaScript</option>
+          <option value="Значение5">PHP</option>
+          <option value="Значение6">Python</option>
+          <option value="Значение7">Java</option>
+          <option value="Значение8">Haskel</option>
+          <option value="Значение9">Clojure</option>
+          <option value="Значение10">Prolog</option>
+          <option value="Значение11">Scala</option>
+        </select>
+      </label><br />
+    <label>
+        Биография:<br />
+        <textarea name="field-name-2"></textarea>
+      </label><br />
+
+
+
+    <br />
+    <label><input type="checkbox" checked="checked"
+      name="check-1" />
+    С контрактом ознакомлен (а)</label><br />
+
+    <input type="submit" value="Сохранить" />
+  </form>
 </body>
 </html>
 
